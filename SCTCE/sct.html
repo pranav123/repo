@@ -15,12 +15,12 @@
         <div class="mainPage">
             <div class="header">
                 <ul class="headerItems">
-                 <li>    <a href="apply.html"> Apply </a></li>
-                  <li>   <a href="gallery.html">  Gallery </a></li>
+                 <li>    <a id="app" href="#"> Apply </a></li>
+                  <li>   <a id="gall" href="#">  Gallery </a></li>
                   <li>   <a href="staff.html">  Staff </a></li>
                   <li>  <a href="students.html">  Students </a></li>
-                  <li>   <a href="alumini.html">  Alumini </a></li>
-                  <li>   <a href="media.html">  Media </a></li>
+                  <li>   <a id="alu" href="#">  Alumini </a></li>
+                  <li>   <a id="media" href="#">  Media </a></li>
                 </ul>
                 
             </div>
@@ -40,32 +40,77 @@
                     </ul>
                 </div>
                 <div class="subMenuItem">
-                    <ul class="subMenu">
-                      <li>  <a href="events.html">  Events</a></li>
-                      <li>  <a href="contacts.html"> Contact Us  </a></li>
-                      <li>  <a href="login.html">  Login </a></li>
+                    
+                    
+                    <div id="loginSignup">
+                        <ul class="login">
+                            <li>  <a id="loginClick"   ><b>Login</b></a> </li>
+                     
+                            <li><a id="signUpClick"  ><b>Sign Up</b></a></li>
                     </ul>
                 </div>
-               
-            </div>
-            <div class="display"><img src="a.jpg"/>
-                <img src="a1.jpg"/>
-                <img src="a2.jpg"/>
-                <img src="a3.jpg"/>
-                <img src="a4.jpg"/>
-                <img src="a5.jpg"/>
-                
+                   
+                </div>
+                <form id="signUp_box" name="signUp" method="post" action="yourfilename.php">  
+                    <fieldset id="signUpMenu">  
+                        <legend id="legend">Sign Up</legend>  
+                        <table>  
+                            <tr>  
+                                <td>Username :</td><td><input name="username" type="text" placeholder="Name" id="username" size="30"></td>  
+                            </tr>  
+                            <tr>  
+                                <td>Email :</td><td><input name="Email" type="text" placeholder="name@gmail.com" id="username" size="30"></td>  
+                            </tr>  
+                            <tr>  
+                                <td><label for="password">Password :</label></td><td><input placeholder="******" name="password" type="password" id="password" size="30"></td>  
+                            </tr>  
+                            <tr><td><label for="password">Retype Password :</label></td><td><input placeholder="******" name="password" type="password" id="password" size="30"></td> 
+                            </tr>
+                            <tr>  
+                                <td class="submitButton"></td><td><input type="submit" value="Submit"></td>  
+                            </tr>  
+                            <div id="popupBoxClose1">cls</div>
+                        </table>  
+                    </fieldset>  
+                </form>  
+                <form id="login_box" name="login" method="post" action="yourfilename.php">  
+            <fieldset id="loginMenu">  
+                <legend id="legend">Login</legend>  
+                <table>  
+                    <tr>  
+                        <td>Username :</td><td><input placeholder="UserName"name="username" type="text" id="username" size="30"></td>  
+                    </tr>  
+                    <tr>  
+                        <td><label for="password">Password :</label></td><td><input placeholder="******" name="password" type="password" id="password" size="30"></td>  
+                    </tr>  
+                    <tr>  
+                        <td class="submitButton"></td><td><input type="submit" value="Submit"></td>  
+                    </tr> 
+                    <div id="popupBoxClose2">cls</div>
+                </table>  
+            </fieldset>  
+        </form>  
+
             </div>
             <div class="menuList">
-                <li id="ds">  <a href="about.html">  Zenith at a Glance  </a></li>
-                  <li>  <a href="leadership.html"> <li> Zenith Leadership  </a></li>
-                 <li>   <a href="president.html"> <li> Zenith President </a></li>
+                <li id="ds">  <a id="about" href="#">  Zenith at a Glance  </a></li>
+                  <li>  <a id="lead" href="#">  Zenith Leadership  </a></li>
+                 <li>   <a id="pres" href="#">  Zenith President </a></li>
                 
             </div>
             <div class="menuListOne">
                 <li id="es">  <a href="sadf.html">  About Us  </a></li>
                   <li>  <a href="admissions.html"> <li> Admissions & Aid   </a></li>
                  <li>   <a href="resources.html"> <li> Resources & Offices </a></li>
+                
+            </div>
+            <div class="big">
+            <div class="display"><img src="a.jpg"/>
+                <img src="a1.jpg"/>
+                <img src="a2.jpg"/>
+                <img src="a3.jpg"/>
+                <img src="a4.jpg"/>
+                <img src="a5.jpg"/>
                 
             </div>
             
@@ -121,6 +166,7 @@
             
             
             </div>
+        </div>
     </div>
     
         <div class="footer">

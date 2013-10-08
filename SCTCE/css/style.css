@@ -86,12 +86,10 @@ background-color: #000000;
         color: black;
     }
 .subMenuItem{
-    background-color: white;
+    background-color: #FFFFFF;
     float: left;
-    height: 49px;
-    margin-left: 446px;
-    margin-top: 21px;
-    width: 274px;
+    margin-left: 535px;
+    margin-top: 29px;
     }
 .subMenu{
     float: left;
@@ -109,9 +107,101 @@ background-color: #000000;
         text-decoration: none;
         color:grey;
     }
-    .subMenu a:hover{
-        background-color: black;
-    }
+   
+    #loginSignup{
+    
+    float: left;
+    cursor: pointer;
+    
+}
+.login{
+    list-style-type: none;
+    
+}
+.login li {
+  
+   float: left;
+   padding: 5px;
+   border-right: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+.login li:hover{
+    background-color:red;
+}
+.login li a{
+     text-decoration: none;
+    color:grey;
+}
+#loginMenu{
+    margin-left: 101px;
+    margin-top: 203px;
+    position: absolute;
+    width: 40%;
+    z-index: 10;
+    background-image: url('../images/footerBackground4.jpg');
+    background-color: wheat;
+}
+#signUpMenu{
+    margin: 205px 92px auto;
+    z-index: 10;
+    height: auto;
+    position: absolute;
+    width: 41%;
+    background-image: url('../images/footerBackground4.jpg');
+    background-color: wheat;
+}
+
+#legend{
+    color: red;
+    font-weight: bold;
+}
+#login_box {
+    padding-left: 120px;
+    padding-right: 40px; 
+    color:red;
+    cursor: pointer;
+    margin: auto;
+    background-color: wheat;
+}
+#signUp_box {
+    padding-left: 120px;
+    padding-right: 40px; 
+    color:red;
+    cursor: pointer;
+    margin: auto;
+    background-color: wheat;
+}
+
+input[type=text] {
+    padding:5px; border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;margin:5px;
+
+}
+input[type=text]:focus {
+    border-color:#333; 
+}
+
+input[type=password] {
+    padding:5px; border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin:5px;
+
+}
+input[type=password]:focus {
+    border-color:#333; 
+}
+#popupBoxClose1{
+    margin-left: 533px;
+    cursor: pointer;
+}
+#popupBoxClose2{
+    margin-left: 533px;
+    cursor: pointer;
+}
+
    .menuList{
     background-color: white;
    
@@ -532,9 +622,10 @@ background-color: lightgrey;
     }
     .leadership{
         width:800px;
-        height: 1060px;
+        height: 675px;
         background-color: grey;
         float: left;
+        overflow: hidden;
         
         
     }
@@ -554,7 +645,8 @@ background-color: lightgrey;
     background-repeat: no-repeat;
     background-position :center;
     width: 100%;
-    height: 100%;
+    height: 93%;
+    
     }
     #image1{
     float: left;
@@ -715,4 +807,21 @@ background-color: lightgrey;
         float: left;
         height: 110px;
     width: 100px;
+    }
+    .galleryHeader{
+        float: left;
+        height: 60px;
+    width: 800px;
+        background-color: grey;
+        
+    }
+    .galleryHeader{
+        text-align:center;
+    }
+    .big{
+        
+    float: left;
+    height: 1059px;
+    margin-top: 0;
+    width: 800px;
     }

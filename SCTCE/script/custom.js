@@ -1,6 +1,31 @@
+$("#signUp_box").hide();
+$("#login_box").hide();
+
 $(document).ready(function() {
     $('.display').cycle({
 fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+});
+$('#app').click(function(){
+    $('.big').load("apply.html");
+});
+$('#gall').click(function(){
+    $('.big').load("gallery.html");
+});
+$('#alu').click(function(){
+    $('.big').load("alumini.html");
+});
+$('#media').click(function(){
+    $('.big').load("media.html");
+});
+$('#about').click(function(){
+    $('.big').load("about.html");
+});
+
+$('#lead').click(function(){
+    $('.big').load("leadership.html");
+});
+$('#pres').click(function(){
+    $('.big').load("president.html");
 });
 $('#aw').show();
     $("#bw").hide();
@@ -375,6 +400,53 @@ $(".menuList").hide();
         $(".menuListTwo").hide();
         
     });
-    
+    $("#signUpClick").click(function() {
+        loadSignupBox();
+       
+    });
+    $('#popupBoxClose1').click(function() {
+        unloadSignupBox();
+        
+    });
+
+    $(':not(#signUp_box)').click(function() {
+        //unloadPopupBox();
+    });
+
+    function unloadSignupBox() {    // TO Unload the Popupbox
+        $('#signUp_box').fadeOut("slow");
+
+    }
+
+    function loadSignupBox() {    // To Load the Popupbox
+        $('#signUp_box').fadeIn("slow");
+    }
+
+
+    /* Login functions */
+
+    $("#loginClick").click(function() {
+        loadloginBox();
+    });
+
+    $('#popupBoxClose2').click(function() {
+        unloadloginBox();
+    });
+
+    $(':not(#login_box)').click(function() {
+        //   unloadloginBox();
+    });
+
+    function unloadloginBox() {    // TO Unload the Popupbox
+        $('#login_box').fadeOut("slow");
+        $(".main").css({// this is just for style        
+            "opacity": "1"
+        });
+    }
+
+    function loadloginBox() {    // To Load the Popupbox
+        $('#login_box').fadeIn("slow");
+         }
+
     
 });
